@@ -1,106 +1,86 @@
-\section{Slutledningar, Sanningstabeller och Pussel}
-% Gör historien här mer tydlig!
-
 \begin{definition}[Slutledning]
-	
+	En slutledning innebär att man vet att ett påstående, konsekvensen, är sant om ett annat påstående, villkoret, är sant. Slutledningen i sig är falsk bara om villkoret är sant men inte konsekvensen.
 \end{definition}
-\begin{problem}
-	Är följande slutledningar sanna?
-	\begin{itemize}
-		\item Eftersom Julia är en ledare på mattekollo och Julia tycker om astronomi existerar det en ledare på mattekollo som gillar astronomi.
-		\item Eftersom schack är ett brädspel och Harry gillar vissa brädspel tycker Harry om schack.
-	\end{itemize}
-\end{problem}
-
-\begin{problem}
-	Varför är följande slutledningar falska?
-	\begin{itemize}
-		\item 
-	\end{itemize}
-	
-\end{problem}
-
-
-Notera! Människor talar alltid sanning och valuvar ljuger alltid! Både människor och varulvar är personer!
-\begin{problem}
-	Du kommer in i en by och två personer, Alice och Bob, pratar med dig. Alice säger att exakt en av dem är en varulv och Bob säger att båda är människor. Vad är dem?
-\end{problem}
-
-\begin{problem}
-	Du fortsätter att bekanta dig med byborna och stöter på, Alex och Britta. Du undrar vilken väg som är bäst till bergen, sjövägen eller skogsvägen. Britta säger snabbt att sjövägen är bäst. Men då påstår Alex att exakt en av dem är en varulv. Vilken väg är bäst?
-\end{problem}
-
-%\begin{problem}
-%	Efter en timmes resa stöter du på tre personer, Adam, Bill, Cecilia och Daniela. Bill påstår att Adam är varulv, Cecilia påstår att Bob inte är människa, Daniela påstår att Cecilia inte är människa och Adam påstår att Daniela är varulv. Hur många människor finns bland dem?
-%\end{problem}
 
 \begin{definition}[Sanningstabell] % Lägg till om ekvivalens mellan kretsar
-	En sanningstabell är ett sätt att lättare analysera och undersöka logiska påståenden som beror av sanningsvärdet på andra påståenden. Man skriver då en rad för varje möjlig kombination av sant och falskt för dessa värden, och vad påståendet (eller påståendena) skulle ha för sanningsvärde. Exempelvis kan sanningstabellen för \((A \land B) \lor (\lnot A \land \lnot B)\) se ut så här:
+	En sanningstabell berättar exakt när ett påstående är sant. Varje rad motsvarar ett fall och varje kolumn ett påstående. De kan till exempel se ut såhär:
 	\begin{center}
-		\begin{tabular}{|c|c|c|c|c|c|}
+		\begin{tabular}{|c|c|c|}
 			\hline
-			\(A\) & \(B\)  & \(A \land B\)  & \(\lnot A \land \lnot B\) & \((A \land B) \lor (\lnot A \land \lnot B)\)\\ \hline
-			0 & 0 & 0 & 1 & 1 \\ \hline
-			0 & 1 & 0 & 0 & 0 \\ \hline
-			1 & 0 & 0 & 0 & 0 \\ \hline
-			1 & 1 & 1 & 0 & 1 \\ \hline
+			``Det regnar'' & ``William är inne'' & ``William är inne om det regnar'' \\ \hline
+			F & F & S \\ \hline
+			F & S & S \\ \hline
+			S & F & F \\ \hline
+			S & S & S \\ \hline
 		\end{tabular}
 	\end{center}
 \end{definition}
 
-% Flytta bak sanningstabellen till lite senare i samma.
-
 \begin{problem}
-	Vad blir sanningstabellen för \(A \underline{\lor} B\)?
+	Varför är slutledningen ``Det är sommarlov om det är mattekollo'' sann även under sportlovet?
 \end{problem}
 
 \begin{problem}
-	Skriv en sanningstabell över följande påståenden, bestäm själv vilka 3 variabler som blir A, B, C:
+	Är slutledningarna sanna?
 	\begin{itemize}
-		\item 
+		\item Eftersom Julia är en ledare på mattekollo och Julia tycker om astronomi finns det ledare på mattekollo som gillar astronomi.
+		\item Eftersom Harry gillar schack och schack är ett brädspel gillar Harry alla brädspel.
 	\end{itemize}
-	
 \end{problem}
 
 \begin{problem}
-	När berget syns och skogen tunnar ut syns Alva och Bror. Bror påstår att Alva är olik honom medan Alva påstår att Bror är en människa. Låt \(A\) vara påståendet ``Alva är en människa'' och \(B\) vara påståendet ``Bror är en människa''. Påståendet ``Puzzlet stämmer'' kan då skrivas som:
-	\[
-		(A \underline{\lor} B \Leftrightarrow  B) \land (B \Leftrightarrow A).
-	\]
-	Varför då? Kan man använda en sanningstabell på detta påstående? Vad stämmer?
-\end{problem}
-
-
-\begin{problem}
-	En varulv fdfasf dafd
-	Lös genom att själv bestämma, och beskriv som ett påstående. Kan det lösas med en sanningstabell?
+	Vad är sanningstabellen för ``Linköpings universitet är öppet eller TODO''
 \end{problem}
 
 \begin{problem}
+	Vilket påstående har sanningstabellen
+	\begin{center}
+		\begin{tabular}{|c|c|c|}
+			\hline
+			``Påståendet är sant'' & ``Påståendet är falskt'' & ~~~~~~~~???~~~~~~~~ \\ \hline
+			F & F & F \\ \hline
+			F & S & S \\ \hline
+			S & F & S \\ \hline
+			S & S & F \\ \hline
+		\end{tabular}
+	\end{center}
+\end{problem}
+
+\noindent
+\textbf{Notera!}  Människor talar alltid sanning och varulvar ljuger alltid!
+
+\begin{problem}
+	Efter en fullmåne under mattekollo inser du att några av ledarna är varulvar! Du träffar Lisa och Sebastian. Sebastian påstår att de båda är människor, men Lisa påstår att Sebastian är en varulv? Vem är vad, och varför?
+\end{problem}
+
+\begin{problem}
+	Du springer vidare och träffar Erik och Tobias. Erik säger att man stoppar ledare från att vara varulvar genom att ge dem kaffe. Tobias påstår att Erik är en varulv om han själv är det.
+
+	Skapa en sanningstabell med påståendena ``Erik är människa'' ``Tobias är människa'' ``Erik talar sanning'' ``Tobias talar sanning'' ``Människor talar alltid sanning, varulvar ljuger alltid''. Kan denna berätta vem som är vad? Är kaffe räddningen?
+\end{problem}
+
+\begin{problem}
+	På väg in i köket möter du Harry, Elias, och William. Du tycker dig höra Harry säga ``Elias är varulv'', Elias säga ``William är varulv'' och William säga ``Harry är varulv''. Kan du ha hört rätt?
+\end{problem}
+
+\begin{problem}[Extra]
+	TODO
+	En är en varulv och en är en människa, men du vet inte vem som är vad. Du får ställa en fråga för att lista ut vilket kaffepaket du ska ta? Vilken fråga?
+\end{problem}
+
+\begin{problem}
+	Är påståendet ``Benjamin är varulv och Valentina är Varulv'' negationen till ``Benjamin är människa eller Valentina är människa''? Två påståenden är samma om de har samma sanningstabell.
+\end{problem}
+
+\begin{problem}
+	Innan du hinner sätta igång kaffemaskinen kommer alla mattekollo ledare fram. Fredrik kommer fram och säger ``Alla mattekollo ledare dricker kaffe'' och Kevin säger att ``Någon mattekollo ledare dricker inte kaffe''. Sedan TODO
+
 	Följande problem kan lösas med en stor sanningstabell, men kan man göra den lite mindre?
 \end{problem}
 
-\begin{problem}
+\begin{problem}[Extra]
+	När dagen är räddad och alla ledare återigen är lika snälla som de brukar. 
 	En sats, kan vi bevisa den? Vilka är de tydliga stegen och implikationerna.
+	De ber dig bevisa att TODO
 \end{problem}
 
-\begin{problem}
-	Kan man använda föregående (sanna) slutledningar på dessa problem?
-\end{problem}
-
-\begin{problem}
-	Lite olika kluringar
-\end{problem}
-
-
-
-
-\begin{itemize}
-	\item Vi gör en tabell över vad som gäller i alla fall
-	\item Göra några enklare pussel själv
-	\item Kan vi göra ett matematiskt påstående av dem, då kan vi göra sanningstabeller!
-	\item Kan vi göra vissa enklare, genom att använda att och och eller inte alltid förändras?
-	\item Kopplar även till matematiska påståenden, visa den enklaste saken
-	\item Fokusera hela tiden på att strukturerat bevisa kluringar
-	\item Extra uppgifter: Några svårare pussel + Bevis
-\end{itemize}
