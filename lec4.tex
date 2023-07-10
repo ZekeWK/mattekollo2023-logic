@@ -1,0 +1,113 @@
+\begin{definition}[Krets]
+	En logisk krets är ett annat sätt att visualisera logiska påståenden. Påståendena beror på några variabler \(x_1, x_2, \dots , x_n\) och använder konjunktioner och negationer för att skapa ett nytt påstående. Noderna är
+
+	\begin{circuitikz} \draw
+		(0,0) node[not port] (not) {}
+		(0,-1) node[below] {``inte''}
+		(4,0) node[and port] (and) {}
+		(3.5,-1) node[below] {``och''}
+		(8,0) node[or port]  (or)  {}
+		(7.5,-1) node[below] {``eller''}
+		(12,0) node[xor port]  (xor)  {}
+		(11.5,-1) node[below] {``antingen eller''};
+	\end{circuitikz}
+	
+	\noindent
+	och de kopplas ihop genom att dra en linje från den högra outputen på en nod till den vänstra inputen.
+\end{definition}
+
+\begin{problem}
+	När är följande krets sann? 
+
+	\begin{circuitikz} \draw
+		(0,4) node (x1) {\(x_1\)}
+		(0,2) node (x2) {\(x_2\)}
+		(0,0) node (x3) {\(x_3\)}
+		(3,3) node[and port] (and) {}
+		(3,1) node[xor port] (xor) {}
+		(6,2) node[or port] (or) {}
+		(8,2) node (y) {\(y\)}
+		(x1) -- (and.in 1)
+		(x2) -- (and.in 2)
+		(x2) -- (xor.in 1)
+		(x3) -- (xor.in 2)
+		(and.out) -- (or.in 1)
+		(xor.out) -- (or.in 2)
+		(or.out) -- (y);
+	\end{circuitikz}
+\end{problem}
+
+\begin{problem}
+	Rita upp en egen krets för påståendet
+	\[
+		(A \land \lnot B) \lor ((A \land \lnot B) \underline{\lor} B).
+	\]
+	\indent
+	Obs! Man kan använda samma output på flera inputs!
+\end{problem}
+
+\begin{problem}
+	I en masugn måste man bestämma huruvida värmen ska vara på eller av. I en förenklad model säger vi att värmen ska vara på om temperaturen är under 1000\textdegree eller om den är inställd på ``maximal effekt''. Så klart måste värmen vara avstängd om ''Nödstopp`` knappen är av. Skapa en logisk krets för detta.
+\end{problem}
+
+
+
+\begin{problem}
+	Tänk dig nu en krets som fungerar som minne, kan du skapa en krets där man kan få välja vilken utav två minnes värden man kan ta?
+\end{problem}
+
+\begin{problem}
+	Nu vill vi ha en krets som givet ett binärt tal ger värdet som sparas i det minnet!
+\end{problem}
+
+\begin{problem}
+	Istället för att addera vill vi nu subtrahera. Vad händer om vi använder modulo, och ser på de mycket stora som negativa. Funkar detta med din additionskrets?
+\end{problem}
+
+
+\section*{Att bygga en miniräknare}
+
+\begin{problem}
+	Ställ upp dessa additioner med binära tal:
+	\begin{itemize}
+		\item \(1_2 + 10_2\) 
+		\item \(101_2 + 1010_2\) 
+		\item \(111_2 + 1_2\) 
+	\end{itemize}
+\end{problem}
+
+
+	Vi vill addera två binära tal \(x\) och \(y\) till \(z\) . Låt \(x_i\) vara påståendet ``Den i:te siffran i x är i'' och samma för \(y\) och \(z\). 
+
+\begin{problem}
+	Bestäm \(z_1\) givet \(x_1, y_1\) med en sanningstabell och sedan logisk krets. Bestäm även om en etta ``bärs över'' till nästa siffra.
+\end{problem}
+
+\begin{problem}
+	Bestäm \(z_n\) och huruvida en etta ``bärs över'' till nästa siffra givet \(x_n, y_n\) samt om en bars över från det lägre talet.  
+\end{problem}
+
+\begin{problem}
+	Skapa en symbol för din tidigare krets, en förkortning där bara input och output syns men logiken blir samma som tidigare. Sätt ihop dessa till att kunna beräkna addition av två fyra bitars tal.
+\end{problem}
+
+\begin{problem}
+	Skapa nu en symbol för hela additions kretsen. Kan man skapa en krets som givet en input, en inställning, antingen ger summan av talen eller bitvis xor, till exempel \(x_3\) och \(y_3\) ger xor till \(z_3\).
+\end{problem}
+
+\begin{problem}[Extra]
+	Hittills har vi bara jobbat med positiva tal, men hur gör man med negativa tal? En tanke var att ha en extra bit (sann eller falsk) som säger om det är positivt eller negativt, men dettavar jobbigt att räkna med. Ett alternativ var att använda modulo.
+	
+	Låt oss räkna med max 4 siffror. Om vi skulle behöva en femte kastar vi den. Liknar detta att räkna i modulo 16? Vad händer om vi skulle se på 15 som -1, 14 som -2 \(\dots\)? Pröva att ställa upp!
+\end{problem}
+
+\section{Extra}
+
+\begin{problem}[Extra]
+\end{problem}
+
+
+% \section{Att bygga ett RAM}
+% Nu kommer vi gå aningen bortom vanlig logik för att kunna bättre beskriva datorer. Datorer gör inte allt i logisk krets en gång, utom de använder minne som inputs i sina kretsar som de även kan ändra på. Låt oss göra något liknande.
+% 
+% Vi lägger till en extra input
