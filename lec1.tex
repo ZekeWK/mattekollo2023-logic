@@ -2,61 +2,16 @@
 % Lägg till mer om slutledningar!!!
 
 \begin{definition}[Påstående]
-	Ett påstående i logiken är en utsaga som är antingen sann eller falsk. 
+	Ett påstående i logiken är något som antingen är sant eller falskt.
 \end{definition}
 
-Till exempel är ``Jorden är rund'' och ``\(5 \cdot 7 = 99\) '' påståenden, men ``Venus och Mars'' och ``\(3 + 4\) '' är inte det.
-
-\begin{problem}
-	Vilka av följande är påståenden? Om de är det, är de sanna?
-	\begin{itemize}
-		\item Solen är blå
-		\item Mattekollo är i juli eller solen är blå
-		\item Påståenden är antingen sanna eller falska
-	\end{itemize}
-\end{problem} 
-
-\begin{problem}
-	Skriv ner ett påståenden som är: 
-	\begin{itemize}
-		\item Sant
-		\item Falskt
-		\item Du inte vet om det är sant eller falskt
-	\end{itemize}
-\end{problem}
-
-\begin{problem}
-	Är följande påståenden sanna? Vilken roll spelar ``inte''?
-	\begin{itemize}
-		\item Solen är inte blå
-		\item Det regnar inte om det är soligt
-		\item Det regnar om det inte är soligt
-	\end{itemize}
-\end{problem}
 
 \begin{definition}[Negation]
-	Negationen till ett påstående \(A\) , ``inte \(A\) '' är sann om \(A\) är falsk och falsk om \(A\) är sann.
+	Negationen till ett påstående är falskt när det ursprungliga påståendet är sant och vice versa. Negationen blir alltså ett eget påstående.
 \end{definition}
 
-\begin{problem}
-	Kan du skriva följande påstående utan negationen?
-	\begin{itemize}
-		\item 
-	\end{itemize}
-\end{problem}
-
-
-\begin{problem}
-	Är följande påståenden sanna eller falska, vilken roll spelar ``och'', ``eller'', och ``antingen eller'' i dessa? Hur påverkar de sanningsvärdena?
-	\begin{itemize}
-		\item Matte är kul och programmering är kul
-		\item Solen är blå eller månen är gjord av ost eller blå är en färg
-		\item Antingen solen är ljus, solen är gjord av gas, eller blå är inte en färg
-	\end{itemize}
-\end{problem}
-	
 \begin{definition}[Konjunktion]
-	En konjunktion är en operator på två eller fler påståenden som skapar ett nytt påstående. De vanligaste konjunktionerna är
+	En konjunktion sätter ihop två påståenden och skapar ett nytt. Några vanliga är:
 	\begin{itemize}
 		\item ``och'' - Som är sann om alla påståendena är sanna
 		\item ``eller'' - Som är sann om något av påståendena är sanna
@@ -65,109 +20,115 @@ Till exempel är ``Jorden är rund'' och ``\(5 \cdot 7 = 99\) '' påståenden, m
 \end{definition}
 
 \begin{problem}
-	Med vilka sanningsvärden på \(A, B\) är påståendena sanna? 
-	\begin{itemize}
-		\item (\(A\) och (\(B\)) eller \(B\))
-		\item \(A\) och \(B\) 
-		\item inte (inte \(A\) eller inte \(B\))
-		\item \(A\) och (antingen \(A\) eller inte \(B\))
-	\end{itemize}
-\end{problem}
-
-\begin{problem}
-	Går det att byta ut det ledande intet?
-\end{problem}
-
-
-\begin{definition}[Slutledningar]
-	Två andra viktiga operatorer är
-	\begin{itemize}
-		\item ``implicerar'' - Som är falsk bara om vänstra värdet är sant och högra värder är falskt
-		\item ``ekvivalent'' - Som är sann om värdena är samma
-	\end{itemize}
-	Med sanna implikationer och ekvivalenser kan man härleda fler påståenden som är sanna. Man behöver inte alltid veta om det vänstra är sannt för att avgöra om själva implikationen är det.
-\end{definition}
-
-\begin{problem}
-	Är följande implikationer och ekvivalenser sanna oavsett sanningsvärdena på \(A, B\)?
-	\begin{itemize}
-		\item \(A\) och \(B\) implicerar \(A\) 
-		\item Antingen \(A\) eller \(B\) eller \(C\) implicerar \(A\) eller \(B\) eller \(C\) 
-		\item (\(A\) implicerar \(B\)) är ekvivalent med (inte \(B\) implicerar inte \(B\) )
-	\end{itemize}
-\end{problem}
-
-\begin{problem}
-	Är \(x=2\) ekvivalent med \(x^2=4\)? Eller är det en implikation? 
-\end{problem}
-
-\begin{problem}
-	Är påståendet ``Solen är blå implicerar Jupiter är lila'' sant?
+	Är dessa påståenden?
+	\begin{enumerate}
+		\item Cirklar har inga hörn och kvadrater har 3 hörn
+		\item 1, 2, 3, 4 och några andra tal
+		\item Antingen är Python ett programmeringsspråk eller så är Java det
+	\end{enumerate}
 \end{problem}
 
 
 \begin{problem}
-	Är följande påståenden sanna? Vilken roll har ``alla'' och ``det existerar''/``det finns''? Kan man uttrycka dem som varanndra?
-	\begin{itemize}
-		\item Alla ledare på mattekollo heter Elias
-		\item Det finns en ledare på mattekollo som heter Elias
-		\item Det finns ingen ledare på mattekollo som inte tycker om spelet set
-		\item Alla ledare på mattekollo som tycker om spelet set
-	\end{itemize}
-\end{problem}
+	Är dessa påståenden sanna eller falska?
+	\begin{enumerate}
+		\item Man ska vara på sitt rum vid 22:00 och frukost finns från 07:00
+		\item Mattekollo är inte i september eller oktober
+		\item Påståenden är antingen sanna eller falska
+	\end{enumerate}
+\end{problem} 
 
-\begin{definition}[Kvantor]
-	En kvantor berättar vilka som följer ett visst påstående. De vanligaste är
-	\begin{itemize}
-		\item Alla - Där alla specificerade måste uppfylla påståendet för att det ska vara sant
-		\item Existerar - Där minst en av de specificerade måste uppfylla påståendet för att det ska vara sant
-	\end{itemize}
-\end{definition}
 
 \begin{problem}
-	Vad är konjugatet (motsats påståendet) till följande?
-	\begin{itemize}
-		\item Alla människor älskar apelsiner
-		\item Det existerar människor som inte älskar appelsiner
-		\item Valentina älskar alla brädspel och det finns ett brädspel som Benjamin inte älskar
-	\end{itemize}
-\end{problem}
-
-
-\begin{definition}[Notation]
-	För att göra det lättare att skriva ner har matematiker bestämt viss symboler som betyder samma som orden:
-	\begin{center}
-		\begin{tabular}{ c c c }
-		 ``inte'' : \(\lnot\)  & ``och'' : \(\land\)  & ``eller'' : \(\lor\)  \\ 
-		 ``antingen eller'' : \(\underline{\lor}\)  & ``implicerar'' : \(\Rightarrow\)  & ``ekvivalent'' : \(\Leftrightarrow \)  \\  
-		\end{tabular}
-	\end{center}
-	Dessutom används ofta 1 och 0 för sant och falskt, och ibland kan \( \cdot \) och \(+\) användas för ``och'' respektive ``eller''
-\end{definition}
-
-\begin{problem}
-	Skriv om med notation:
-	\begin{itemize}
-		\item \(A\) och (\(B\) eller \(C\))
-		\item \(A\) implicerar (antingen \(B\) eller \(C\))
-	\end{itemize}
+	Skriv ner ett påståenden som du inte vet om det är sant eller falskt.
 \end{problem}
 
 \begin{problem}
-	Skriv några egna meningar med notationen. För själva påståendena brukar man sätta in citattecken.
+	Vad är negationen till ``Fredrik älskar alla robotar''?
+\end{problem}
+
+\begin{problem}
+	Kan man använda färre ``inte''? Påståenden är samma om de alltid är sanna samtidigt.
+	\begin{enumerate}
+		\item Det finns inga brädspel som Valentina inte älskar
+		\item Inte alla jämna tal delas inte av tre
+		\item \(x \neq 2\) och \(x>= 2\) 
+	\end{enumerate}
+\end{problem}
+
+\begin{problem}
+	Kan man förenkla dessa påståenden?
+	\begin{enumerate}
+		\item \(x\) är större än 2 eller mindre än -2 och definitivt större än 3
+		\item Mattekollo hålls antingen i Linköping eller någon annanstans i Sverige
+	\end{enumerate}
+\end{problem}
+
+\begin{problem}
+	Är negationen till ``Idag är tisdag och klockan är efter 8:00'' att ``Idag är inte tisdag och klockan är före 8:00''?
 \end{problem}
 
 \begin{problem}[Extra]
-	Kan du skapa en tabell över när ett påstående är sant? Gör det för påstående ``Om A är sant och (B eller C) är sant'' där A, B och C är påstående vars sanningsvärde du vet.
+	Det finns två vanliga konjunktioner till, ``om'' och ``om och endast om''. När borde dessa vara sanna? Vad låter rimligt? Kom ihåg att de alltid måste vara antingen sanna eller falska? Borde följande påståenden vara sanna?
+	\begin{enumerate}
+		\item Om jämna tal är delbara på två så är a
+		\item TODO!
+	\end{enumerate}
 \end{problem}
 
-\begin{problem}
-	Om och endast om \(x\) är udda och \(y\) är udda är \(x  \cdot y\) udda. Kan detta påstående formuleras med notation?
+\begin{problem}[Extra]
+	Något svårare logik problem
 \end{problem}
 
-\begin{problem}
-	Översätt följande påstående till text: ``William gillar logik'' \(\land\) ``Ergo är logik'' \(\Rightarrow \) ``William giller Ergo''
-\end{problem}
+
+
+
+
+% \begin{definition}[Slutledningar]
+% 	Två andra viktiga operatorer är
+% 	\begin{itemize}
+% 		\item ``implicerar'' - Som är falsk bara om vänstra värdet är sant och högra värder är falskt
+% 		\item ``ekvivalent'' - Som är sann om värdena är samma
+% 	\end{itemize}
+% 	Med sanna implikationer och ekvivalenser kan man härleda fler påståenden som är sanna. Man behöver inte alltid veta om det vänstra är sannt för att avgöra om själva implikationen är det.
+% \end{definition}
+
+
+
+% \begin{definition}[Notation]
+% 	För att göra det lättare att skriva ner har matematiker bestämt viss symboler som betyder samma som orden:
+% 	\begin{center}
+% 		\begin{tabular}{ c c c }
+% 		 ``inte'' : \(\lnot\)  & ``och'' : \(\land\)  & ``eller'' : \(\lor\)  \\ 
+% 		 ``antingen eller'' : \(\underline{\lor}\)  & ``implicerar'' : \(\Rightarrow\)  & ``ekvivalent'' : \(\Leftrightarrow \)  \\  
+% 		\end{tabular}
+% 	\end{center}
+% 	Dessutom används ofta 1 och 0 för sant och falskt, och ibland kan \( \cdot \) och \(+\) användas för ``och'' respektive ``eller''
+% \end{definition}
+% 
+% \begin{problem}
+% 	Skriv om med notation:
+% 	\begin{itemize}
+% 		\item \(A\) och (\(B\) eller \(C\))
+% 		\item \(A\) implicerar (antingen \(B\) eller \(C\))
+% 	\end{itemize}
+% \end{problem}
+% 
+% \begin{problem}
+% 	Skriv några egna meningar med notationen. För själva påståendena brukar man sätta in citattecken.
+% \end{problem}
+% 
+% \begin{problem}[Extra]
+% 	Kan du skapa en tabell över när ett påstående är sant? Gör det för påstående ``Om A är sant och (B eller C) är sant'' där A, B och C är påstående vars sanningsvärde du vet.
+% \end{problem}
+% 
+% \begin{problem}
+% 	Om och endast om \(x\) är udda och \(y\) är udda är \(x  \cdot y\) udda. Kan detta påstående formuleras med notation?
+% \end{problem}
+% 
+% \begin{problem}
+% 	Översätt följande påstående till text: ``William gillar logik'' \(\land\) ``Ergo är logik'' \(\Rightarrow \) ``William giller Ergo''
+% \end{problem}
 
 
 
