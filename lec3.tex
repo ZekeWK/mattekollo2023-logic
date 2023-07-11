@@ -2,7 +2,7 @@
 % Lägg till komplement
 
 \begin{definition}[Mängd]
-En mängd är en samling element där ordning och antal inte spelar någon roll. Dessa element kan vara vad som helst till exempel färgen blå eller talet 2
+En mängd är en samling element där ordning och antal inte spelar någon roll. Dessa element kan vara vad som helst till exempel färgen blå eller talet 2.
 \end{definition}
 
 Man kan definiera en mängd antingen genom att lista upp dess element inom måsvingar, till exempel \(\left\{\text{flygplan, hatt, pannkaka} \right\}\), eller genom en regel för elementen, till exempel mängden av alla färger.
@@ -18,7 +18,7 @@ Man kan definiera en mängd antingen genom att lista upp dess element inom måsv
 			Komplement & \(A^C\) & Inte är i A \\ \hline
 		\end{tabular}
 	\end{center}
-	Notera! Komplement fungerar bara om det finns universalmängd som berättar vad alla relevanta element är, den är oftast intuitiv.
+	Notera! Komplement fungerar bara om det finns en universalmängd som berättar vad alla relevanta element är, den är oftast intuitiv.
 \end{definition}
 
 \begin{problem}
@@ -30,13 +30,13 @@ Man kan definiera en mängd antingen genom att lista upp dess element inom måsv
 \end{problem}
 
 \begin{problem}
-	Skriv upp mängden av alla heltal \(x\) som uppfyler påståendet ``\(x>2\) och \(x <5\)''.
+	Skriv upp mängden av alla heltal \(x\) som uppfyller påståendet ``\(x>2\) och \(x <5\)''.
 \end{problem}
 
 
 \begin{problem}
 	Om universalmängden är \(\left\{\text{Mattekollo, UVS och Kodsport} \right\}\), vad blir då:
-	\begin{enumerate}
+	\begin{enumerate}[label=\alph*)]
 		\item \(\left\{\text{Mattekollo, Kodsport} \right\} \cup \left\{\text{Kodsport} \right\}\) 
 		\item \(\left\{\text{UVS, Mattekollo}\right\}^C\) 
 		\item \(\left\{\text{Mattekollo, UVS}\right\} \cap \left\{\text{UVS, Kodsport} \right\} \cap \left\{\text{Kodsport, Mattekollo} \right\}\) 
@@ -50,7 +50,7 @@ Man kan definiera en mängd antingen genom att lista upp dess element inom måsv
 \end{problem}
 
 \begin{problem}
-	Du har mängden av alla tidigare mattekollo deltagare \(X\)  och mängden av alla mattekollo ledare \(Y\) . Hur skapar man mängden av alla mattekollo ledare som tidigare varit deltagare?
+	Du har mängden av alla tidigare Mattekollo deltagare \(X\)  och mängden av alla Mattekollo ledare \(Y\) . Hur skapar man mängden av alla Mattekollo ledare som tidigare varit deltagare?
 \end{problem}
 
 \begin{problem}
@@ -58,7 +58,7 @@ Man kan definiera en mängd antingen genom att lista upp dess element inom måsv
 \end{problem}
 
 \begin{problem}
-	Finns det en koppling mellan mängdoperationerna och påståendet deras element uppfyller? Dessa beror kanske särskilt på de logiska konjukntionerna?
+	Finns det en koppling mellan mängdoperationerna och påståendet deras element uppfyller? Dessa beror kanske särskilt på de logiska konjunktionerna?
 \end{problem}
 
 \begin{problem}
@@ -71,20 +71,17 @@ Man kan definiera en mängd antingen genom att lista upp dess element inom måsv
 \end{problem}
 
 \begin{problem}[Extra]
-	Hur många element är i \((A \cup B) \cap C\) om \(A =\) mängden av alla tal delbara på 2, \(B = \) mängden av alla tal delbara med 5 och \(C =\) mängden av alla tal från 0 till 100.
+	Hur många element är i \((A \cup B) \cap C\) om \(A =\) mängden av alla tal delbara på 2, \(B = \) mängden av alla tal delbara med 5 och \(C =\) mängden av alla tal från 0 till 20.
 \end{problem}
 
 \begin{problem}
-	Ett Venndiagram används illustrerar hur mängder hör ihop. Varje mängd ritas som en cirkel så att de överlappar i om mängderna har något element gemensamtom mängderna har något element gemensamt. Sedan färgar man i den mängd man menar. Till blir venndiagrammet för mängden \(A \cup B\)
+	Ett Venndiagram används illustrerar hur mängder hör ihop. Varje mängd ritas som en cirkel så att de överlappar om mängderna har något element gemensamt mängderna har något element gemensamt. Sedan färgar man i den mängd man menar. Venndiagrammet för mängden \(A \cup B\) blir
 	\def\firstcircle{(0,0) circle (1.5cm)}
 	\def\secondcircle{(60:2cm) circle (1.5cm)}
 	\def\thirdcircle{(0:2cm) circle (1.5cm)}
 	\begin{center}
 		\begin{tikzpicture}
 			\begin{scope}
-%				\fill[red, fill opacity=0.3] \firstcircle;
-%				\fill[green, fill opacity=0.3] \secondcircle;
-%				\fill[blue, fill opacity=0.3] \thirdcircle;
 				\draw \firstcircle node[below] {$A$};
 				\draw \secondcircle node [above] {$B$};
 				\draw \thirdcircle node [below] {$C$};
@@ -93,6 +90,7 @@ Man kan definiera en mängd antingen genom att lista upp dess element inom måsv
 		\end{tikzpicture}
 	\end{center}
 
-	Rita ett venndiagram för \((A \cap B)\cup C\). Kan man visa uppgift 9 med dessa?
+	\noindent
+	Rita ett Venndiagram för \((A \cap B)\cup C\). Kan man visa uppgift 9 med dessa?
 \end{problem}
 
