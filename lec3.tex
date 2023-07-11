@@ -50,11 +50,11 @@ Man kan definiera en mängd antingen genom att lista upp dess element inom måsv
 \end{problem}
 
 \begin{problem}
-	Du har mängden av alla tidigare mattekollo deltagare X och mängden av alla mattekollo ledare Y. Hur skapar man mängden av alla mattekollo ledare som tidigare varit deltagare?
+	Du har mängden av alla tidigare mattekollo deltagare \(X\)  och mängden av alla mattekollo ledare \(Y\) . Hur skapar man mängden av alla mattekollo ledare som tidigare varit deltagare?
 \end{problem}
 
 \begin{problem}
-	Vi har mängden A vars element uppfyller påståendet ``Elementet är rött'' och B var element uppfyller påståendet ``Elementet är ett klädesplagg''. Vilket påstående uppfyller deras snitt?
+	Vi har mängden A vars element uppfyller påståendet ``Elementet är rött'' och B vars element uppfyller påståendet ``Elementet är ett klädesplagg''. Vilket påstående uppfyller deras snitt?
 \end{problem}
 
 \begin{problem}
@@ -62,9 +62,37 @@ Man kan definiera en mängd antingen genom att lista upp dess element inom måsv
 \end{problem}
 
 \begin{problem}
+	Stämmer det att \((A \cup B) \cap (A \cup C) = A \cup (B \cap C)\) för alla mängder \(A, B, C\)? Använd en sanningstabell!
+\end{problem}
+
+\begin{problem}[Extra]
+	Det är 9 dagar på Mattekollo, 7 dagar har lektioner, 2 är måndagar, och en är varken måndag eller har lektioner. Hur många måndagar har lektioner?
 	Hur många element uppfyller påståendet?
 \end{problem}
 
 \begin{problem}[Extra]
-	Typiska mängdproblem
+	Hur många element är i \((A \cup B) \cap C\) om \(A =\) mängden av alla tal delbara på 2, \(B = \) mängden av alla tal delbara med 5 och \(C =\) mängden av alla tal från 0 till 100.
 \end{problem}
+
+\begin{problem}
+	Ett Venndiagram används illustrerar hur mängder hör ihop. Varje mängd ritas som en cirkel så att de överlappar i om mängderna har något element gemensamtom mängderna har något element gemensamt. Sedan färgar man i den mängd man menar. Till blir venndiagrammet för mängden \(A \cup B\)
+	\def\firstcircle{(0,0) circle (1.5cm)}
+	\def\secondcircle{(60:2cm) circle (1.5cm)}
+	\def\thirdcircle{(0:2cm) circle (1.5cm)}
+	\begin{center}
+		\begin{tikzpicture}
+			\begin{scope}
+%				\fill[red, fill opacity=0.3] \firstcircle;
+%				\fill[green, fill opacity=0.3] \secondcircle;
+%				\fill[blue, fill opacity=0.3] \thirdcircle;
+				\draw \firstcircle node[below] {$A$};
+				\draw \secondcircle node [above] {$B$};
+				\draw \thirdcircle node [below] {$C$};
+				\fill[opacity=0.5, kollofargen] \firstcircle \secondcircle;
+			\end{scope}
+		\end{tikzpicture}
+	\end{center}
+
+	Rita ett venndiagram för \((A \cap B)\cup C\). Kan man visa uppgift 9 med dessa?
+\end{problem}
+
