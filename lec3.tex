@@ -1,5 +1,4 @@
 \section{Mängdlära}
-% Lägg till komplement
 
 \begin{definition}[Mängd]
 En mängd är en samling element där ordning och antal inte spelar någon roll. Dessa element kan vara vad som helst till exempel färgen blå eller talet 2.
@@ -26,7 +25,7 @@ Man kan definiera en mängd antingen genom att lista upp dess element inom måsv
 \end{problem}
 
 \begin{problem}
-	Är \(\left\{\text{blå} , \text{röd} \right\}\) samma som \(\left\{\text{blå}, \left\{\text{röd} \right\}\right\}\)?
+	Är \(\left\{\text{Elliot} , \text{Tage}, \text{Adam} \right\}\) samma som \(\left\{\text{Elliot}, \left\{\text{Tage}, \left\{\text{Adam} \right\} \right\}\right\}\)?
 \end{problem}
 
 \begin{problem}
@@ -58,16 +57,15 @@ Man kan definiera en mängd antingen genom att lista upp dess element inom måsv
 \end{problem}
 
 \begin{problem}
-	Finns det en koppling mellan mängdoperationerna och påståendet deras element uppfyller? Dessa beror kanske särskilt på de konjunktionerna?
+	Finns det en koppling mellan mängdoperationerna och påståendet deras element uppfyller? Dessa beror kanske särskilt på konjunktionerna?
 \end{problem}
 
 \begin{problem}
-	Stämmer det att \((A \cup B) \cap (A \cup C) = A \cup (B \cap C)\) för alla mängder \(A, B, C\)? Använd en sanningstabell!
+	Stämmer det att \((A \cup B) \cap (A \cup C) = A \cup (B \cap C)\) för alla mängder \(A, B, C\)? Använd en sanningstabell och visa!
 \end{problem}
 
 \begin{problem}[Extra]
 	Det är 9 dagar på Mattekollo, 7 dagar har lektioner, 2 är måndagar, och en är varken måndag eller har lektioner. Hur många måndagar har lektioner?
-	Hur många element uppfyller påståendet?
 \end{problem}
 
 \begin{problem}[Extra]
@@ -75,7 +73,7 @@ Man kan definiera en mängd antingen genom att lista upp dess element inom måsv
 \end{problem}
 
 \begin{problem}[Extra]
-	Ett Venndiagram används illustrerar hur mängder hör ihop. Varje mängd ritas som en cirkel så att de överlappar om mängderna har något element gemensamt mängderna har något element gemensamt. Sedan färgar man i den mängd man menar. Venndiagrammet för mängden \(A \cup B\) blir
+	Ett Venndiagram är ett sätt att illustrera mängder. Man ritar först upp cirklar motsvarande alla mängder, där överlappen representerar element mängderna har gemensamt. Man kan sedan markera de områden en annan mängd består av. Till exempel blir Venndiagrammet för mängden \(A \cup B\) 
 	\def\firstcircle{(0,0) circle (1.5cm)}
 	\def\secondcircle{(60:2cm) circle (1.5cm)}
 	\def\thirdcircle{(0:2cm) circle (1.5cm)}
@@ -91,5 +89,22 @@ Man kan definiera en mängd antingen genom att lista upp dess element inom måsv
 	\end{center}
 
 	\noindent
-	Rita ett Venndiagram för \((A \cap B)\cup C\). Kan man visa uppgift 9 med dessa?
+	\begin{enumerate}[label=\alph*)]
+		\item Rita ett Venndiagram för \((A \cap B) \cup C \)
+		\item Bevisa fråga 9 med Venndiagram
+	\end{enumerate}
 \end{problem}
+
+\begin{problem}[Extra Extra]
+	När man hade lagt upp en omgång med Set fanns det 12 kort totalt. 7 var röda, 6 var randiga och 6 hade romber. Vidare vet du att 4 var röda och randiga, 3 hade randiga romber och 2 hade röda romber. Till sist fanns det ett kort med en röd randig romb.
+	\begin{enumerate}[label=\alph*)]
+		\item Hur många kort var röda och randiga men saknade romber?
+		\item Hur många hade romber men var varken röda eller randiga?
+		\item Hur många var varken röda, romber eller randiga?
+	\end{enumerate}
+\end{problem}
+
+\begin{problem}[Extra Extra]
+	Kan du se några problem med vår definition av mängder? Kan vi skapa mängder som blir paradoxala (likt ``Denna mening är falsk'')? Kan vi ändra definitionen för att skydda oss från detta, kanske med hjälp av en universalmängd.
+\end{problem}
+
