@@ -42,7 +42,7 @@
 \end{problem}
 
 \begin{problem}
-	I en masugn måste man bestämma huruvida värmen ska vara på eller av. I en förenklad model säger vi att värmen ska vara på om temperaturen är under 1000\textdegree~eller om den är inställd på ``maximal effekt''. Så klart måste värmen vara avstängd om ''Nödstopp`` knappen är aktiverad. Skapa en logisk krets för detta.
+	I en masugn måste man bestämma huruvida värmen ska vara antingen på eller av. I en förenklad model säger vi att värmen ska vara på om temperaturen är under 1000\textdegree~eller om den är inställd på ``maximal effekt''. Så klart måste värmen vara avstängd om ''Nödstopp`` knappen är aktiverad. Skapa en logisk krets för detta.
 \end{problem}
 
 
@@ -62,7 +62,7 @@
 \end{problem}
 
 \begin{problem}
-	Nu vill vi bestämma en godtycklig siffra i det binära talet. Vi vet siffrorna på samma position för talet och har påstående för att dessa är ettor. Vi har också ett påstående för om det finns en ``minnesetta'' från siffran innan. Rita en krets för om siffran och för om den leder till en ``minnesetta''.
+	Nu vill vi bestämma en godtycklig siffra i det binära talet. Vi vet motsvarande siffror i termerna och har påstående för att dessa är ettor. Vi har också ett påstående för om det finns en ``minnesetta'' från siffran innan. Rita en krets för om siffran är 1 och om den leder till en ``minnesetta''.
 \end{problem}
 
 \begin{problem}
@@ -70,11 +70,11 @@
 \end{problem}
 
 \begin{problem}[Extra]
-	Positiva tal är bra, men det är trevligt med negativa tal också. Om vi bara har 4 siffror räknar vi i modulo 16. Detta gör att \(15 \equiv -1 \mod 16, \dots , 8 \equiv -8\). Blir \(3 + 15 \equiv 3 - 1 \mod 16\)? Hur kan vi skriva negativa tal i vår dator? Fungerar det med vår krets?
+	Hur kan vi bäst representera negativa tal? Fungerar det i vår krets? Kan vi göra det på ett sätt som fungerar i vår krets?
 \end{problem}
 
 \begin{problem}[Extra]
-	Logiska kretsar kan inte spara någon information, men i datorer vill vi kunna göra detta. Låt oss utvärdera samma krets flera gånger, men låta ett av invärdena vara i stil med ``Utvärdet \(y\) var sann förra gången kretsen utvärderades''. Invärdet till kretsen påverkas alltså av utvärdet förra gången. Notera att vi fortfarande har vanliga logiska kretsar, men kan ha ``minne''. 
+	Logiska kretsar kan inte spara någon information, men i datorer vill vi kunna göra detta. Låt oss utvärdera samma krets flera gånger, men låta ett av invärdena påverkas av ett av förra utvärderingens utvärden gången. Notera att vi fortfarande har vanliga logiska kretsar, men kan ha ``minne'' genom in- och utvärdena. 
 
 	För att förtydliga notationen kan vi skriva vårt par av invärde och utvärde som en symbol (kanske en kvadrat?). För att förenkla kan vi göra att invärdet (det värde minnet ger ifrån sig) är samma som förra utvärderingen om utvärdet (det värde minnet fick in) var falskt, och motsatsen om det var sant.
 
